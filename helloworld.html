@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+   <input type="checkbox" name="ch1">
+   <input type="checkbox" name="ch2">
+   <input type="checkbox" name="ch3">
+   <input type="checkbox" name="ch4">
+   <input type="checkbox" name="ch5">
+   <input type="checkbox" name="ch6">
+<script>
+    var elems=document.querySelectorAll("input[type=checkbox]");
+    /*console.log(elems);
+    var d=new Date();
+    var y=d.getFullYear();
+    var m= d.getMonth()<10?"0"+ (d.getMonth()+1): (d.getMonth()+1);
+    var d= d.a=getDate()<10?"0"+ d.getDate():d.getDate();
+    console.log(y+"-"+m+"-"+d);*/
+    for(let i=0;i<elems.length;i++){
+        elems[i].onchange=function(){
+            alert(i);
+        }
+    }
+</script>
+</body>
+</html>
